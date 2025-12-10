@@ -1,38 +1,218 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Vittorio Viñas — Official Website</title>
-  <meta name="description" content="The official page of Vittorio Vinas.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
-    }
-    h1 {
-      margin-bottom: 0px;
-    }
-    .sub {
-      color: #555;
-      margin-top: 4px;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vittorio Vinas — Public Website</title>
+<meta name="description" content="Scripts archive and short synopses by Vittorio Vinas." />
+
+<style>
+  :root{
+    --maxw:760px;
+    --text:#111;
+    --muted:#6a6a6a;
+    --bg:#ffffff;
+    --card:#f5f5f5;
+    --border:#dcdcdc;
+    --shadow:0 1px 4px rgba(0,0,0,0.06);
+    --radius:6px;
+    --gap:18px;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:32px 18px;
+    display:flex;
+    justify-content:center;
+    background:var(--bg);
+    color:var(--text);
+  }
+
+  .wrap{width:100%;max-width:var(--maxw);}
+
+  h1{
+    margin:0;
+    font-size:1.8rem;
+    font-weight:600;
+  }
+
+  .tag{
+    color:var(--muted);
+    margin-top:6px;
+    font-size:0.95rem;
+  }
+
+  .lead{
+    margin:18px 0 22px 0;
+    color:var(--text);
+    line-height:1.6;
+    font-size:1rem;
+  }
+
+  .controls{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:18px;
+  }
+
+  .btn{
+    padding:8px 12px;
+    border-radius:var(--radius);
+    text-decoration:none;
+    background:#fff;
+    border:1px solid var(--border);
+    color:var(--text);
+    font-size:0.95rem;
+  }
+
+  .grid{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .script{
+    background:var(--card);
+    padding:14px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+
+  .meta{flex:1;}
+
+  .title{
+    margin:0 0 6px 0;
+    font-size:1.05rem;
+    font-weight:600;
+  }
+
+  .syn{
+    margin:0;
+    color:var(--muted);
+    line-height:1.5;
+    font-size:0.94rem;
+  }
+
+  .small{
+    font-size:0.88rem;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  .actions{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    min-width:120px;
+  }
+
+  .linkbtn{
+    padding:6px 10px;
+    border-radius:var(--radius);
+    text-decoration:none;
+    border:1px solid var(--border);
+    background:#fff;
+    color:var(--text);
+    font-size:0.9rem;
+    text-align:center;
+  }
+
+  footer{
+    margin-top:28px;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+
+  @media(max-width:640px){
+    .script{flex-direction:column;}
+    .actions{flex-direction:row;}
+  }
+</style>
 </head>
+
 <body>
-  <h1>Vittorio Viñas</h1>
-  <p class="sub">Writer • Director </p>
+<main class="wrap">
 
-  <p>Welcome. This is a minimal, fast-loading site/page hosted by GitHub. 
-  I'll expand on these projects soon with more links, projects, and updates.</p>
+<header>
+  <h1>The Official Page of Vittorio Vinas</h1>
+  <div class="tag">Writer • Director</div>
+</header>
 
-  <p>For now, you can bookmark this page or connect with me through my platforms.</p>
+<p class="lead">
+  Selected scripts available for reading. Click the link to open in Google Drive.
+  Set sharing to “Anyone with the link — Viewer”.
+</p>
 
-  <p>— V.V.</p>
+<div class="controls">
+  <a class="btn" href="mailto:youremail@example.com">Contact</a>
+  <a class="btn" href="https://github.com/VittorioVinas" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn" href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+</div>
+
+<section class="grid">
+
+  <!-- SCRIPT BLOCK -->
+  <article class="script">
+    <div class="meta">
+      <h3 class="title">TITLE: The Midnight Hour</h3>
+      <p class="syn">
+        SYNOPSIS: A burned-out journalist returns to his hometown to investigate a series of disappearances tied to local legends. Slow-burn psychological horror, 105 pages.
+      </p>
+      <p class="small">Format: Plug and Play Feature • Genre: Horror</p>
+    </div>
+
+    <div class="actions">
+      <a class="linkbtn" href="https://drive.google.com/file/d/YOUR-DOC-ID/view?usp=sharing" target="_blank">View Script</a>
+      <a class="linkbtn" href="https://drive.google.com/drive/folders/YOUR-FOLDER-ID" target="_blank">Folder</a>
+    </div>
+  </article>
+  <!-- /SCRIPT BLOCK -->
+
+    <!-- SCRIPT BLOCK -->
+  <article class="script">
+    <div class="meta">
+      <h3 class="title">TITLE: That's Gangsta</h3>
+      <p class="syn">
+        SYNOPSIS: A burned-out journalist returns to his hometown to investigate a series of disappearances tied to local legends. Slow-burn psychological horror, 105 pages.
+      </p>
+      <p class="small">Format: Feature • Genre: Horror</p>
+    </div>
+
+    <div class="actions">
+      <a class="linkbtn" href="https://drive.google.com/file/d/YOUR-DOC-ID/view?usp=sharing" target="_blank">View Script</a>
+      <a class="linkbtn" href="https://drive.google.com/drive/folders/YOUR-FOLDER-ID" target="_blank">Folder</a>
+    </div>
+  </article>
+  <!-- /SCRIPT BLOCK -->
+
+  <article class="script">
+    <div class="meta">
+      <h3 class="title">TITLE: Hollowlight</h3>
+      <p class="syn">
+        SYNOPSIS: After an experimental theater rehearsal goes wrong, a troupe becomes convinced the set is rewriting their memories. Psychological horror, 22 pages.
+      </p>
+      <p class="small">Format: Short Film • Genre: Horror</p>
+    </div>
+
+    <div class="actions">
+      <a class="linkbtn" href="https://docs.google.com/document/d/YOUR-DOC-ID/edit?usp=sharing" target="_blank">View Script</a>
+    </div>
+  </article>
+
+</section>
+
+<footer>
+  Tip: In Google Docs → Share → Settings, uncheck “Viewers can download/print/copy”.
+</footer>
+
+</main>
+
 </body>
 </html>
